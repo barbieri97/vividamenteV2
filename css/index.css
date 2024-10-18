@@ -11,8 +11,18 @@
 
     div {
         width: 60%;
+        max-width: 600px;
         margin-left: 50px;
         margin-bottom: 10px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.527);
+        border-radius: 5px;
+
+        img {
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+        }
     }
 
     img {
@@ -110,6 +120,7 @@
 
     .photo img {
         width: 500px;
+        max-width: 100%;
         background-color: red;
     }
 
@@ -140,6 +151,7 @@
         justify-content: flex-start;
         padding: 20px;
         text-align: start;
+        width: 100%;
     }
 
 
@@ -253,9 +265,11 @@
     .carousel {
         position: relative;
         width: 70%;
+        min-width: 300px;
         max-width: 400px;
         margin: 40px;
         overflow: hidden;
+        padding: 10px;
       }
       
       .carousel-container {
@@ -331,5 +345,9 @@
     body .conteiner-conversion  img {
         width: 100%;
         height: auto;
+    }
+
+    body .feature {
+        flex-direction: column;
     }
 }

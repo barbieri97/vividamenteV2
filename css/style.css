@@ -30,6 +30,7 @@ body {
 }
 
 .conversion-btn {
+    max-width: 100%;
     width: 300px;
     height: 50px;
     background: linear-gradient(45deg, var(--accent-color), #5000d1);

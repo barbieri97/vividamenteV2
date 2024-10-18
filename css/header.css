@@ -20,7 +20,7 @@ header {
     top: 0;
     right: -300px; /* Menu começa fora da tela */
     width: 250px; /* Largura do menu */
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100dvh; /* Ocupa toda a altura da tela */
     background-color: var(--accent-color);
     color: #fff;
     overflow-x: hidden;

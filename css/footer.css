@@ -2,7 +2,7 @@ footer {
     display: flex;
     /* min-height: 350px; */
     background-color: var(--accent-color);
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     color: #fff;
     flex-wrap: wrap;
@@ -15,8 +15,14 @@ footer {
         margin-bottom: 10px;
     }
 
+    .contacts {
+        max-width: 100%;
+
+    }
+
     ul {
         list-style: none;
+        padding-left: 0;
     }
 
     ul a {
