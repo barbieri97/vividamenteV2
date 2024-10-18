@@ -76,10 +76,6 @@
     svg {
         fill: #fff;
     }
-
-    .highlight {
-        background-color: var(--conversion-color);
-    }
 }
 
 #about {

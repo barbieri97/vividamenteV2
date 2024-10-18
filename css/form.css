@@ -39,7 +39,6 @@
   
   /* Estilo do botão */
   form button {
-    background-color: var(--conversion-color);
     color: white;
     border: none;
     border-radius: 4px;
