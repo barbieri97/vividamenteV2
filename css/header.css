@@ -1,0 +1,113 @@
+/* Estilos básicos */
+header {
+    background-color: var(--accent-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
+  }
+  
+  .logo {
+    height: 60px;
+    margin: 10px;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Menu começa fora da tela */
+    width: 250px; /* Largura do menu */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: var(--accent-color);
+    color: #fff;
+    overflow-x: hidden;
+    transition: right 0.3s ease; /* Transição suave para abrir/fechar */
+    padding: 20px;
+    z-index: 1001;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    display: none; /* Oculta a sobreposição por padrão */
+    z-index: 1000; /* Garante que a sobreposição fique abaixo do menu */
+  }
+  
+  .menu a:hover {
+    background-color: #b499e0;
+  }
+  
+  svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 5px;
+    
+  }
+
+  
+  .nav-menu.active {
+    right: 0; /* Move o menu para dentro da tela */
+  }
+  .overlay.active {
+    display: block;
+  }
+  
+  /* Estilos para desktop */
+  @media (min-width: 768px) {
+    .nav-menu {
+      display: flex;
+      position: static; /* Remove a posição fixa no desktop */
+      width: auto; /* Largura ajustada para desktop */
+      height: auto; /* Altura ajustada para desktop */
+      background: none;
+      color: inherit;
+      overflow: visible;
+      transition: none; /* Remove a transição para desktop */
+    }
+  
+    .menu {
+      flex-direction: row; /* Menu em linha no desktop */
+    }
+  
+    .menu li {
+      margin: 0 20px; /* Espaçamento entre os itens do menu no desktop */
+    }
+  
+    .menu-icon {
+      display: none; /* Esconde o ícone de menu no desktop */
+    }
+  
+    .menu-open-icon {
+      display: none; /* Esconde o ícone de menu no desktop */
+    }
+  }
