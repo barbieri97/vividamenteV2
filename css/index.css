@@ -305,6 +305,16 @@
         cursor: pointer;
         z-index: 1001;
       }
+
+      .arrows-carousel {
+        position: relative;
+        width: fit-content;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+      }
       
       .prev {
         left: 10px;
@@ -323,6 +333,15 @@
 
     svg {
         fill: #fff;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
     }
 }
 
@@ -345,5 +364,9 @@
 
     body .feature {
         flex-direction: column;
+    }
+
+    body .feature h2 {
+        text-align: center;
     }
 }
