@@ -29,14 +29,13 @@
         height: 200px;
     }
 
-    h1 {
-        font-size: 70PX;
-        color: var(--accent-color);
-        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
-    }
-
-    h3 {
-        color: #fff;
+    h2 {
+        /* font-size: 2.5rem; */
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff; /* Título escuro para contraste suave */
+        letter-spacing: 2px;
+        /* margin-bottom: 20px; */
     }
 }
 
@@ -377,5 +376,9 @@
 
     body #home {
         justify-content: center;
+
+        div {
+            margin: 0 0 0 0;
+        }
     }
 }

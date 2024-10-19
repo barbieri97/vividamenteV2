@@ -1,0 +1,148 @@
+#initial {
+    background-image: url("../assets/psico8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.527);
+        border-radius: 5px;
+        /* width: 60%; */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        margin: 30px;
+        text-align: center;
+
+        img {
+            width: 100px;
+        }
+        h2 {
+            font-weight: 600;
+            text-align: center;
+            color: #ffffff;
+            letter-spacing: 2px;
+
+        }
+    }
+}
+
+#mission-vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+        color: #333; /* Título escuro para contraste suave */
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        color: #555; /* Tom mais suave que o título principal */
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6; /* Aumenta a legibilidade */
+        color: #666; /* Texto em um tom suave de cinza */
+    }
+    
+    div {
+        flex: 1;
+        margin: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leve sombra para destacar */
+    }
+    
+}
+
+#fundators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#associates {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    .associate {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 550px;
+        margin: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: var(--secondary-color);
+        p {
+            font-size: 1rem;
+            line-height: 1.6; /* Aumenta a legibilidade */
+        }
+        img{
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        p {
+            padding: 20px;
+        }
+        .name-associate {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            h1, p {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+
+
+            svg {
+                border-radius: 50%;
+                padding: 10px;
+                transform: translateY(-25px);
+                background: linear-gradient(45deg, var(--accent-color), #5000d1);
+                fill: #ffff;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    #mission-vision {
+        flex-direction: column; /* Empilha os elementos no mobile */
+        padding: 20px;
+    }
+
+    #mission-vision img {
+        margin-top: 20px;
+    }
+}
