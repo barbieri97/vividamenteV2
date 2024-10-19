@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/greetings.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <script src="js/menu.js" defer></script>
+    <script src="js/form.js"></script>
     <title>VIVIDAMENTE | AGRADECIMENTOS</title>
   </head>
   <body>
@@ -48,8 +51,35 @@
       </nav>
       <div class="overlay"></div>
     </header>
-
+    <main>
+      <img src="assets/logo_purple_text.png" alt="logo" />
+      <h1>
+        Obrigado pelo seu contato, nossa equipe entrará em contato com você em
+        breve!
+      </h1>
+    </main>
     <footer>
+      <section class="form">
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mblredky"
+          method="POST"
+        >
+          <h2>Entre em contato</h2>
+          <label>Nome:</label>
+          <input type="text" name="name" />
+          <label>Contato:</label>
+          <input type="number" name="phone" />
+          <label>Serviço Desejado:</label>
+          <input type="text" name="service" />
+          <label>Email:</label>
+          <input type="email" name="email" />
+          <label>Mensagem:</label>
+          <textarea type="text" name="message"></textarea>
+          <button id="my-form-button" class="highlight">Enviar</button>
+          <p id="my-form-status"></p>
+        </form>
+      </section>
       <section class="address">
         <h3>Confira os nossos endereços</h3>
         <iframe
