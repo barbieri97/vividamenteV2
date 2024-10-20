@@ -8,7 +8,7 @@
     justify-content: flex-start;
 
     div {
-        padding: 20px;
+        /* padding: 20px; */
         background-color: rgba(0, 0, 0, 0.527);
         border-radius: 5px;
         /* width: 60%; */
@@ -19,6 +19,10 @@
         justify-content: center;
         max-width: 800px;
         margin: 30px;
+
+        img, h2, a {
+            padding: 15px;
+        }
 
         img {
             max-width: 100%;
@@ -160,6 +164,7 @@
     #initial div {
         align-items: center;
         text-align: center;
+
     }
 
     #mission-vision {
