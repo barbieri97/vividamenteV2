@@ -4,18 +4,25 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    min-height: 500px;
-    
+
     div {
-        width: 60%;
-        max-width: 800px;
-        padding: 10px;
+        /* padding: 20px; */
         background-color: rgba(0, 0, 0, 0.527);
         border-radius: 5px;
+        /* width: 60%; */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 800px;
         margin: 30px;
+
+        img, h2, a {
+            padding: 15px;
+        }
 
         img {
             max-width: 100%;
@@ -24,9 +31,9 @@
         }
         h2 {
             font-weight: 600;
-            /* text-align: ce; */
-            color: #ffffff; 
+            color: #ffffff;
             letter-spacing: 2px;
+
         }
     }
 }
@@ -377,6 +384,7 @@
 
         div {
             margin: 0 0 0 0;
+            border-radius: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;

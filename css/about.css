@@ -167,6 +167,20 @@
 
     }
 
+    #initial {
+        justify-content: center;
+
+        div {
+            margin: 0 0 0 0;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
     #mission-vision {
 
         padding: 0;
