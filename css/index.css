@@ -8,34 +8,26 @@
     align-items: center;
     justify-content: flex-start;
     min-height: 500px;
-
+    
     div {
         width: 60%;
-        max-width: 1000px;
-        margin-left: 50px;
-        margin-bottom: 10px;
+        max-width: 800px;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.527);
         border-radius: 5px;
+        margin: 30px;
 
         img {
             max-width: 100%;
-            width: 400px;
+            width: 300px;
             height: auto;
         }
-    }
-
-    img {
-        height: 200px;
-    }
-
-    h2 {
-        /* font-size: 2.5rem; */
-        font-weight: 600;
-        text-align: center;
-        color: #ffffff; /* Título escuro para contraste suave */
-        letter-spacing: 2px;
-        /* margin-bottom: 20px; */
+        h2 {
+            font-weight: 600;
+            /* text-align: ce; */
+            color: #ffffff; 
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -63,6 +55,8 @@
         width: 300px;
         padding: 10px;
         text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
     }
 
     .icon-card {
@@ -116,7 +110,8 @@
     .photo img {
         width: 500px;
         max-width: 100%;
-        background-color: red;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
     }
 
     .check {
@@ -147,6 +142,7 @@
         padding: 20px;
         text-align: start;
         width: 100%;
+        border-radius: 8px;
     }
 
 
@@ -173,10 +169,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 5px;
+        border-radius: 8px;
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
     
     .contact-conversion {
@@ -228,7 +225,7 @@
     img {
         height: 100%;
         max-height: 400px;
-        border-radius: 5px;
+        border-radius: 8px 0 0 8px ;
     }
     h1 {
         font-size: 30px;
@@ -363,6 +360,7 @@
     body .conteiner-conversion  img {
         width: 100%;
         height: auto;
+        border-radius: 8px;
     }
 
     body .feature {
@@ -379,6 +377,29 @@
 
         div {
             margin: 0 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    body img {
+        border-radius: 0;
+    }
+
+    body #conversion-box img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    #clinic-features {
+        .photo img {
+            border-radius: 0;
+        }
+
+        .feature {
+            border-radius: 0;
         }
     }
 }

@@ -18,7 +18,5 @@ window.onload = () => {
   const whatsBtn = document.querySelector("#whats-btn");
 
   whatsBtn.innerHTML += whatsSVG;
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 1500);
+  loader.style.display = "none";
 };

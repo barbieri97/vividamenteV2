@@ -5,28 +5,28 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     div {
-        padding: 10px;
+        padding: 20px;
         background-color: rgba(0, 0, 0, 0.527);
         border-radius: 5px;
         /* width: 60%; */
         color: white;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        max-width: 600px;
+        max-width: 800px;
         margin: 30px;
-        text-align: center;
 
         img {
-            width: 100px;
+            max-width: 100%;
+            width: 300px;
+            height: auto;
         }
         h2 {
             font-weight: 600;
-            text-align: center;
             color: #ffffff;
             letter-spacing: 2px;
 
@@ -69,7 +69,7 @@
         max-width: 100%;
         height: auto;
         border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leve sombra para destacar */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Leve sombra para destacar */
     }
     
 }
@@ -86,7 +86,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     
     .associate {
@@ -94,11 +94,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         max-width: 550px;
         margin: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         border-radius: 8px;
         background-color: var(--secondary-color);
+        padding: 10px;
         p {
             font-size: 1rem;
             line-height: 1.6; /* Aumenta a legibilidade */
@@ -107,6 +109,7 @@
             width: 300px;
             height: auto;
             border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
         p {
             padding: 20px;
@@ -123,13 +126,21 @@
                 text-align: center;
             }
 
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                padding: 15px;
+                background: linear-gradient(45deg, var(--accent-color), #5000d1);
+                transform: translateY(-30px);
+
+            }
+
 
             svg {
-                border-radius: 50%;
-                padding: 10px;
-                transform: translateY(-25px);
-                background: linear-gradient(45deg, var(--accent-color), #5000d1);
                 fill: #ffff;
+                margin: 0 0 0 0;
             }
         }
     }
@@ -144,5 +155,19 @@
 
     #mission-vision img {
         margin-top: 20px;
+    }
+
+    #initial div {
+        align-items: center;
+        text-align: center;
+    }
+
+    #mission-vision {
+
+        padding: 0;
+
+        img {
+            border-radius: 0;
+        }
     }
 }
